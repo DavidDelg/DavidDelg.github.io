@@ -2,7 +2,7 @@ body{
     font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(21, 169, 238, 0.5), rgba(4, 7, 7, 0.5));
+    background: linear-gradient(rgba(21, 169, 238, 0.5), #04070780);
     color: white;
     text-align: center;
 }
@@ -13,13 +13,14 @@ nav{
     position: sticky;
     display: flex;
     justify-content: space-between;
-    grid-area: nav;
+    
 }
 nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 nav ul li{
     margin-left: 20px;

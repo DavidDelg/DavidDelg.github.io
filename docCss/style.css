@@ -1,13 +1,13 @@
 .container {
     display: grid;
-    grid-template: 120px 1fr 80px / 18% 1fr;
+    grid-template: 160px 1fr 80px / 18% 1fr;
     grid-template-areas:    'header header' 
                             'aside main' 
                             'footer footer';              
     font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(21, 169, 238, 0.5), rgba(4, 7, 7, 0.5));
+    background: linear-gradient(#4a90e2, #04070780);
     height: 100vh;
 }
 
@@ -17,73 +17,72 @@ header {
     text-align: center;
 }
 .cabecera{
-    display: grid;
-    grid-template: 65px 55px / 1fr 1fr;
-    grid-template-areas: 'name title' 'nav nav';
+    display: space-around;
+    padding: o;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
     
+   
     color: white;
 }
 .name{
     color: rgb(255, 255, 255);
     grid-area: name;
     padding: 0;
-    text-align: left;
-    overflow-wrap: break-word;
-}
-.subtitle{
-    color: rgb(105, 51, 105);
-    grid-area: title;
     text-align: center;
     overflow-wrap: break-word;
+    border: solid 1px;
 }
 nav{
     background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
     color: white;
-    padding: 10px 20px;
+    padding: 10px 1%;
     position: sticky;
     display: flex;
     justify-content: space-between;
     grid-area: nav;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: auto;
+    border: solid 1px;
     
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    text-align: center;
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
-
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+nav ul li{
+    margin-left: 20px;
+    align-items: baseline;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
     border-radius: 5px;
-    text-align: center;
+    align-items: baseline;
+}
+nav a:hover{
+    text-decoration: none;
+    background-color: #ff6b6b;
+    transform: scale(1.1);
+    
 }
 
 section{
     grid-area: aside;
-    background-color: violet;
+    border: solid 1px;
 }
 main{
     grid-area: main;
-    background-color: #f9f9f9;
+    border: solid 1px;
 }
 footer{
     grid-area: footer;
     font-size: 10px;
     text-align: center;
-    background-color: #ec3a3a;
+    
 }
