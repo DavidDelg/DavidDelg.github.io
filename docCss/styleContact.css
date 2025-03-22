@@ -7,14 +7,13 @@ body{
     text-align: center;
 }
 nav{
-    background: linear-gradient(90deg, #4a90e2, #983fe0); /*Gradiante*/
+    background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
     color: white;
     padding: 10px 20px;
     position: sticky;
-    top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
+    grid-area: nav;
 }
 nav ul{
     margin: 0;
