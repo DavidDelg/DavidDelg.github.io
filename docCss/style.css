@@ -34,6 +34,14 @@ header {
     overflow-wrap: break-word;
     border: solid 1px;
 }
+.title{
+    color: rgb(255, 255, 255);
+    grid-area: title;
+    padding: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    
+}
 nav{
     background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
     color: white;
@@ -79,6 +87,19 @@ section{
 main{
     grid-area: main;
     border: solid 1px;
+    margin-right: 10px;
+    padding-right: 10px;
+
+p{
+    margin-left: 10px;
+    color: rgb(244, 247, 248);
+}
+
+img{
+    width: 170px;
+    height: 300px;
+    float: left;
+}
 }
 footer{
     grid-area: footer;
