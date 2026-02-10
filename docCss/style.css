@@ -42,7 +42,6 @@ header {
     color: rgb(0, 0, 0);
 }
 .navList{
-    background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
     color: rgb(0, 0, 0);
     padding: 10px 1%;
     position: sticky;
@@ -67,7 +66,7 @@ nav ul li{
 }
 nav a{
     text-decoration: none;
-    color: rgb(38, 129, 248);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
