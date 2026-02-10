@@ -14,12 +14,9 @@ header {
     margin: 0;
     align-items: center;
     justify-content: space-between;
-    
-   
-    color: rgb(243, 134, 134);
 }
 .name{
-    color: rgb(52, 209, 105);
+    color: rgb(0, 0, 0);
     grid-area: name;
     padding: 0;
     text-align: center;
@@ -42,7 +39,7 @@ header {
     text-align: center;
     overflow-wrap: break-word;
     border: solid 1px;
-    
+    color: rgb(0, 0, 0);
 }
 .navList{
     background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
