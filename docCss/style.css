@@ -68,11 +68,10 @@ nav a:hover{
 }
 
 section{
-    grid-area: aside;
+    
     border: solid 1px;
 }
 main{
-    grid-area: main;
     border: solid 1px;
     margin-right: 10px;
     padding-right: 10px;
@@ -89,7 +88,6 @@ img{
 }
 }
 footer{
-    grid-area: footer;
     font-size: 10px;
     text-align: center;
     
