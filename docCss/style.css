@@ -31,7 +31,7 @@ header {
 }
 nav{
     background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
-    color: rgb(17, 13, 13);
+    color: rgb(0, 0, 0);
     padding: 10px 1%;
     position: sticky;
     display: flex;
