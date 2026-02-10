@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px auto auto 160px;
+    grid-template-areas: 
+                        "cabesera cabesera cabesera" 
+                        "sidebar main main"
+                        "sidebar seccion articulos" 
+                        "pies pies pies";
+
+
+}
+.cabesera{
+    grid-area: cabesera;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+}
+.seccion{
+    grid-area: seccion;
+}
+.articulos{
+    grid-area: articulos;
+}
+.pies{
+    grid-area: pies;
+}
