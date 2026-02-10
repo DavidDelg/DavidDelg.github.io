@@ -7,6 +7,9 @@
                         "sidebar main main"
                         "sidebar seccion articulos" 
                         "pies pies pies";
+    gap: 10px;
+    height: 100vh;
+    border: 1px solid black;
 
 
 }
