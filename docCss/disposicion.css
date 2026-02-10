@@ -15,19 +15,25 @@
 }
 .cabesera{
     grid-area: cabesera;
+    border: 1px solid black;
 }
 .sidebar{
     grid-area: sidebar;
+    border: 1px solid black;
 }
 .main{
     grid-area: main;
+    border: 1px solid black;
 }
 .seccion{
     grid-area: seccion;
+    border: 1px solid black;
 }
 .articulos{
     grid-area: articulos;
+    border: 1px solid black;
 }
 .pies{
     grid-area: pies;
+    border: 1px solid black;
 }
