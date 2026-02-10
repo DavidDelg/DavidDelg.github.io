@@ -24,6 +24,7 @@ header {
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
+    border: solid 1px;
     
 }
 .title{
@@ -32,9 +33,10 @@ header {
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
+    border: solid 1px;
     
 }
-nav{
+.navList{
     background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
     color: rgb(0, 0, 0);
     padding: 10px 1%;
