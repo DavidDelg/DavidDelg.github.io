@@ -47,13 +47,14 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: rgb(229, 173, 173);
 }
 .menu{
     grid-area: menu;
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
-    color: rgb(229, 173, 173);
+    
 }
 .navList{
     color: rgb(157, 226, 79);
@@ -80,7 +81,6 @@ nav ul li{
     align-items: baseline;
 }
 .btn{ 
-    text-decoration: none;
     color: rgb(90, 233, 178);
     font-weight: bold;
     padding: 5px 5px;
@@ -89,7 +89,7 @@ nav ul li{
 }
 nav a:hover{
     text-decoration: none;
-    background-color: #4c3c88;
+    background-color: #323233;
     transform: scale(1.1);
     
 }
@@ -114,6 +114,7 @@ section{
     justify-content: space-between;
     gap: 5px; 
     flex-wrap: wrap;
+    
 }
 .imgMain{
     width: 200px;
@@ -125,4 +126,9 @@ footer{
     font-size: 10px;
     text-align: center;
     
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: rgb(60, 73, 45);
 }
