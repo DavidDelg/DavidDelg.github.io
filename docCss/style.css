@@ -35,6 +35,13 @@ h2{
     margin: 0;
     padding: 0;
 }
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(229, 173, 173);
+    text-align: center;
+}
 .title{
     color: rgb(229, 173, 173);
     grid-area: title;
@@ -43,12 +50,7 @@ h2{
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
-.encabezado{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: rgb(229, 173, 173);
-}
+
 .menu{
     grid-area: menu;
     padding: 0;
@@ -81,8 +83,7 @@ nav ul li{
     align-items: baseline;
 }
 .btn{ 
-    color: rgb(90, 233, 178);
-    font-weight: bold;
+    color: rgb(77, 20, 131);
     padding: 5px 5px;
     border-radius: 5px;
     align-items: baseline;
