@@ -7,7 +7,7 @@ btnMenu.addEventListener('click', (e) => {
 });
 document.addEventListener('click', (e) => {
   if (e.target !== sidebar && e.target !== btnMenu) {
-    sidebar.classList.remove('active');
+    sidebar.classList.remove('activo');
   }
 });
 const links = document.querySelectorAll('.sidebar a');
