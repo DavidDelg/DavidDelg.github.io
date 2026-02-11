@@ -133,17 +133,16 @@ section{
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    border: 1px solid rgb(116, 62, 62);
     gap: 10px;
 }
 .imgMain:hover{
     transform: scale(1.1);
     border: 2px solid rgb(116, 62, 62);
 }
-.imgMain.dasCapi{
+.dasCapi{
     width: 200px;
     height: 250px;
-    float: right;
+    float: left;
     padding: 0;
     margin: 0;
     border-radius: 10px;
