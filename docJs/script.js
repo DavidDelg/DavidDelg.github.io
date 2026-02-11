@@ -1,4 +1,4 @@
-const btnMenu = document.querySelector('.btn-menu');
+const btnMenu = document.getElementById('btn-menu');
 const sidebar = document.querySelector('.sidebar');
 
 btnMenu.addEventListener('click', (e) => {
