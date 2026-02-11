@@ -38,7 +38,7 @@ h2{
     color: rgb(0, 0, 0);
     grid-area: title;
     padding: 0;
-    text-align: center;
+    text-align: end;
     overflow-wrap: break-word;
     border: solid 1px;
     
@@ -53,7 +53,8 @@ h2{
 }
 .navList{
     color: rgb(0, 0, 0);
-    padding: 10px 1%;
+    padding: 0;
+    margin: 0;
     position: sticky;
     display: flex;
     justify-content: space-between;
