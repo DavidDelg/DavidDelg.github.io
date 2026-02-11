@@ -2,7 +2,7 @@ const btnMenu = document.querySelector('.btn-menu');
 const sidebar = document.querySelector('.sidebar');
 
 btnMenu.addEventListener('click', (e) => {
-  sidebar.classList.toggle('active');
+  sidebar.classList.toggle('activo');
   e.stopPropagation();
 });
 document.addEventListener('click', (e) => {
@@ -17,4 +17,5 @@ links.forEach(link => {
     sidebar.classList.remove('active');
     
   });
+
 });
