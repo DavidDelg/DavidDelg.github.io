@@ -42,6 +42,11 @@ h2{
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .menu{
     grid-area: menu;
     padding: 0;
