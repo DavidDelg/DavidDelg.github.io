@@ -7,36 +7,34 @@
                         "sidebar main main"
                         "sidebar seccion articulos" 
                         "pies pies pies";
-    gap: 10px;
+    gap: 5px;
     
     background-color: rgb(71, 77, 72);
 
 }
 .cabesera{
     grid-area: cabesera;
-    border: 1px solid black;
     background-color: rgb(17, 20, 17);
-    color: turquoise;
 }
 .sidebar{
     grid-area: sidebar;
-    border: 1px solid black;
+    
 }
 .main{
     grid-area: main;
-    border: 1px solid black;
+    
 }
 .seccion{
     grid-area: seccion;
-    border: 1px solid black;
+    
 }
 .articulos{
     grid-area: articulos;
-    border: 1px solid black;
+    
 }
 .pies{
     grid-area: pies;
-    border: 1px solid black;
+   
 }
 .btn-toggle{
     display: none;
@@ -61,6 +59,7 @@
         z-index: 1000;
         transition: 0.3s;
         background-color: rgb(37, 44, 37);
+        color: rgb(109, 92, 62);
     }
     .sidebar.activo{
         left: 0px;
