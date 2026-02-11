@@ -129,11 +129,12 @@ section{
 .imgMain{
     width: 200px;
     height: 250px;
-    float: left;
+    float: right;
     padding: 0;
     margin: 0;
     border-radius: 10px;
     border: 1px solid rgb(116, 62, 62);
+    gap: 10px;
 }
 .imgMain:hover{
     transform: scale(1.1);
@@ -157,5 +158,5 @@ footer{
 p{
     margin: 0;
     padding: 0;
-    color: rgb(32, 44, 78);
+    color: rgb(52, 82, 165);
 }
