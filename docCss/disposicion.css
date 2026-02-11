@@ -38,6 +38,9 @@
     grid-area: pies;
     border: 1px solid black;
 }
+.btn-toggle{
+    display: none;
+}
 @media (max-width: 600px) {
     .container{
         grid-template-columns: auto;
