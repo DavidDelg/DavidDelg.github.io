@@ -41,6 +41,8 @@
 }
 @media (max-width: 600px) {
     .container{
+        margin: 0px;
+        padding: 0px;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
