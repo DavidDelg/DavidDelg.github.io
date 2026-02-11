@@ -16,6 +16,8 @@ header {
     justify-content: space-between;
 }
 .name{
+    display: flex;
+    flex-direction: row;
     color: rgb(0, 0, 0);
     grid-area: name;
     padding: 0;
@@ -74,7 +76,7 @@ nav a{
 }
 nav a:hover{
     text-decoration: none;
-    background-color: #ff6b6b;
+    background-color: #d8a1a1;
     transform: scale(1.1);
     
 }
