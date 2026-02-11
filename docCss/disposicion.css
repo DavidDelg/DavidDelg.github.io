@@ -56,4 +56,7 @@
         z-index: 1000;
         transition: 0.3s;
     }
+    .sidebar .activo{
+        left: 0px;
+    }
 }
