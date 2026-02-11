@@ -52,7 +52,7 @@ h2{
     color: rgb(127, 164, 235);
 }
 .navList{
-    color: rgb(0, 0, 0);
+    color: rgb(157, 226, 79);
     padding: 0;
     margin: 0;
     position: sticky;
@@ -75,11 +75,11 @@ nav ul li{
     margin-left: 20px;
     align-items: baseline;
 }
-nav a{
+.btn{ 
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(90, 233, 178);
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     align-items: baseline;
 }
