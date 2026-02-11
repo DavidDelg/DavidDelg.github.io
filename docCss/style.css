@@ -19,7 +19,7 @@ header {
 .name{
     display: flex;
     flex-direction: row;
-    color: rgb(0, 0, 0);
+    color: rgb(116, 62, 62);
     grid-area: name;
     padding: 0;
     text-align: center;
@@ -35,13 +35,13 @@ h2{
     padding: 0;
 }
 .title{
-    color: rgb(0, 0, 0);
+    color: rgb(229, 173, 173);
     grid-area: title;
     padding: 0;
     text-align: end;
     overflow-wrap: break-word;
     border: solid 1px;
-    
+    flex-wrap: wrap;
 }
 .menu{
     grid-area: menu;
@@ -49,7 +49,7 @@ h2{
     text-align: center;
     overflow-wrap: break-word;
     border: solid 1px;
-    color: rgb(0, 0, 0);
+    color: rgb(127, 164, 235);
 }
 .navList{
     color: rgb(0, 0, 0);
