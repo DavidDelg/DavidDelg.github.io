@@ -9,7 +9,7 @@
                         "pies pies pies";
     gap: 5px;
     
-    background-color: rgb(64, 68, 65);
+    background-color: rgb(34, 34, 34);
 
 }
 .cabesera{
@@ -68,7 +68,7 @@
     }
     .btn-toggle{
         display: block;
-        
+        position: absolute;
        
         
     }

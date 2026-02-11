@@ -46,7 +46,7 @@ h2{
     color: rgb(229, 173, 173);
     grid-area: title;
     padding: 0;
-    
+    text-align: right;
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
