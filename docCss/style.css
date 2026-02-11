@@ -7,7 +7,7 @@ header {
     "name name name"
     "title title title"
     "menu menu menu"
-    "btnDesplegable btnDesplegable btnDesplegable";
+    "btn-toggle btn-toggle btn-toggle";
 }
 .cabecera{
     
@@ -81,7 +81,7 @@ nav a:hover{
     transform: scale(1.1);
     
 }
-.btnDesplegable{
+.btn-toggle{
     grid-area: btnDesplegable;
     padding: 0;
     text-align: center;
