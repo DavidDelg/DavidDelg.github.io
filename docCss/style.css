@@ -25,7 +25,14 @@ header {
     text-align: center;
     overflow-wrap: break-word;
     border: solid 1px;
-    
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
 }
 .title{
     color: rgb(0, 0, 0);
