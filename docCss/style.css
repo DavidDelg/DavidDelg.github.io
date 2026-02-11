@@ -115,7 +115,16 @@ section{
     justify-content: space-between;
     gap: 5px; 
     flex-wrap: wrap;
-    
+}
+.maincontent{
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px; 
+    flex-wrap: wrap;
 }
 .imgMain{
     width: 200px;
