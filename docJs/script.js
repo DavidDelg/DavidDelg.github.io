@@ -14,7 +14,7 @@ const links = document.querySelectorAll('.sidebar a');
 
 links.forEach(link => {
   link.addEventListener('click', () => {
-    sidebar.classList.remove('active');
+    sidebar.classList.remove('activo');
     
   });
 
