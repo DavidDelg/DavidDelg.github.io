@@ -57,7 +57,7 @@ h2{
     
 }
 .navList{
-    color: rgb(157, 226, 79);
+    color: rgb(77, 20, 131);
     padding: 0;
     margin: 0;
     position: sticky;
@@ -120,6 +120,10 @@ section{
     width: 200px;
     height: 250px;
     float: right;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid rgb(116, 62, 62);
 }
 
 footer{
@@ -130,5 +134,5 @@ footer{
 p{
     margin: 0;
     padding: 0;
-    color: rgb(60, 73, 45);
+    color: rgb(109, 129, 85);
 }
