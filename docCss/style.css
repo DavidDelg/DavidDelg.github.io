@@ -24,7 +24,7 @@ header {
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
-    border: solid 1px;
+    
 }
 h1{
     margin: 0;
@@ -40,7 +40,6 @@ h2{
     padding: 0;
     text-align: end;
     overflow-wrap: break-word;
-    border: solid 1px;
     flex-wrap: wrap;
 }
 .menu{
@@ -48,7 +47,6 @@ h2{
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
-    border: solid 1px;
     color: rgb(127, 164, 235);
 }
 .navList{
@@ -94,12 +92,13 @@ nav a:hover{
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
-    border: solid 1px;
-    color: rgb(0, 0, 0);
+    
+    
 }
 section{
     
-    border: solid 1px;
+    padding: 0;
+    margin: 0;
 }
 .main{
     border: solid 1px;
@@ -111,7 +110,7 @@ section{
 }
 .imgMain{
     width: 200px;
-    height: 300px;
+    height: 250px;
     float: right;
 }
 
