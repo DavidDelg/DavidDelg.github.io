@@ -2,11 +2,12 @@
 header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
     grid-template-areas: 
     "name name name"
     "title title title"
-    "menu menu menu";
+    "menu menu menu"
+    "btnDesplegable btnDesplegable btnDesplegable";
 }
 .cabecera{
     
@@ -80,7 +81,14 @@ nav a:hover{
     transform: scale(1.1);
     
 }
-
+.btnDesplegable{
+    grid-area: btnDesplegable;
+    padding: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    border: solid 1px;
+    color: rgb(0, 0, 0);
+}
 section{
     
     border: solid 1px;
