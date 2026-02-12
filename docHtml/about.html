@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mi</title>
     <link rel="stylesheet" href="../docCss/style.css">
+    <link rel="stylesheet" href="../docCss/disposicion.css">
 </head>
 <body>
-    <header>
-        <h1>Acerca de mi</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li> 
-                <li><a href="../docHtml/cervices.html">Servicios</a></li>    
-                <li><a href="../docHtml/contact.html">Contacto</a></li>    
-                <li><a href="../docHtml/about.html">Acerca de mi</a></li>    
+    <header class="cabesera">
+        <div class="name">
+            <h1>David Delgadillo</h1>
+        </div>
+        <div class="title"><h2>
+            <span>mi portafolio</span></h2>
+        </div>
+        <nav class="menu">
+            <ul class="navList">
+
+                <li><a href="index.html" class="btn">Inicio</a></li>
+                <li><a href="../docHtml/cervices.html" class="btn">Servicios</a></li>
+                <li><a href="../docHtml/contact.html" class="btn">Contacto</a></li>
+                <li><a href="../docHtml/about.html" class="btn">Acerca de mi</a></li>
             </ul>
-            
         </nav>
-    </header>
+        <div>
+            <button id="btn-menu" class="btn-toggle btn">desplegar</button>
+        </div>
+    </header> 
+    <main>
+        <div>
+            <h2 class="title">Acerca de mi</h2>
+            <p>¡Hola! Soy David, un desarrollador web Full Stack. Me encanta programar y diseñar sitios web. Tengo experiencia en HTML, CSS, JavaScript, PHP, MySQL y más. ¡Contáctame para trabajar juntos!</p>
+        </div>
+    </main>
+    <section>
+
+    </section>
+    <sidebar class="sidebar">
+        <div class="lateral">
+            <h3 class="title encabezado">Servicios Destacados</h3>
+            <ul>
+                <li>lo que hago</li>
+                <li>lo que mas me gusta</li>
+                <li>lo que me gusta hacer</li>
+                <li>lo que me divierte</li>
+            </ul>
+        </div>
+    </sidebar>
     <section>
         <div class="about">
             
@@ -31,5 +60,12 @@
             </p>
         </div>
     </section>
+    <article>
+
+    </article>
+    <footer>
+        <p>Desarrollado por David Delgadillo</p>
+    </footer>
+    <script src="../docJs/script.js"></script>
 </body>
 </html>
