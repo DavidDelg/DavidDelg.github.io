@@ -9,12 +9,12 @@
                         "pies pies pies";
     gap: 5px;
     
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(143, 142, 142);
 
 }
 .cabesera{
     grid-area: cabesera;
-    background-color: rgb(105, 196, 105);
+    background-color: rgb(169, 236, 169);
 }
 .sidebar{
     grid-area: sidebar;
