@@ -1,0 +1,75 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+                        "cabesera cabesera cabesera" 
+                        "sidebar main main"
+                        "sidebar seccion articulos" 
+                        "pies pies pies";
+    gap: 5px;
+    
+    background-color: rgb(34, 34, 34);
+
+}
+.cabesera{
+    grid-area: cabesera;
+    background-color: rgb(17, 20, 17);
+}
+.sidebar{
+    grid-area: sidebar;
+    
+}
+.main{
+    grid-area: main;
+    
+}
+.seccion{
+    grid-area: seccion;
+    
+}
+.articulos{
+    grid-area: articulos;
+    
+}
+.pies{
+    grid-area: pies;
+   
+}
+.btn-toggle{
+    display: none;
+}
+@media (max-width: 600px) {
+    .container{
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+                            "cabesera" 
+                            "main"
+                            "seccion"
+                            "articulos"
+                            "pies";
+    }
+    .sidebar{
+        position: fixed;
+        left: -200px;
+        top: 0px;
+        height: 100vh;
+        width: 200px;
+        z-index: 1000;
+        transition: 0.3s;
+        background-color: rgb(37, 44, 37);
+        color: rgb(109, 92, 62);
+    }
+    .sidebar.activo{
+        left: 0px;
+    }
+    .btn-toggle{
+        display: block;
+        position: absolute;
+       
+        
+    }
+}

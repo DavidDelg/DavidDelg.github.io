@@ -1,56 +1,72 @@
-.container {
-    display: grid;
-    grid-template: 160px 1fr 80px / 18% 1fr;
-    grid-template-areas:    'header header' 
-                            'aside main' 
-                            'footer footer';              
-    font-family: arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(#4a90e2, #04070780);
-    height: 100vh;
-}
-
 
 header {
-    grid-area: header;
-    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas: 
+    "name name name"
+    "title title title"
+    "menu menu menu"
+    "btn-toggle btn-toggle btn-toggle";
 }
 .cabecera{
-    display: space-around;
+    
     padding: o;
     margin: 0;
     align-items: center;
     justify-content: space-between;
-    
-   
-    color: white;
 }
 .name{
-    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    color: rgb(116, 62, 62);
     grid-area: name;
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
-    border: solid 1px;
+    
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.title.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(229, 173, 173);
+    text-align: center;
 }
 .title{
-    color: rgb(255, 255, 255);
+    color: rgb(229, 173, 173);
     grid-area: title;
+    padding: 0;
+    text-align: right;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.menu{
+    grid-area: menu;
     padding: 0;
     text-align: center;
     overflow-wrap: break-word;
     
 }
-nav{
-    background: linear-gradient(90deg, #4a90e2, #9871b9); /*Gradiante*/
-    color: white;
-    padding: 10px 1%;
+.navList{
+    color: rgb(77, 20, 131);
+    padding: 0;
+    margin: 0;
     position: sticky;
     display: flex;
     justify-content: space-between;
     grid-area: nav;
-    border: solid 1px;
+
     
 }
 
@@ -60,50 +76,86 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
+    
 }
 nav ul li{
     margin-left: 20px;
     align-items: baseline;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
+.btn{ 
+    color: rgb(77, 20, 131);
+    padding: 5px 5px;
     border-radius: 5px;
     align-items: baseline;
 }
 nav a:hover{
     text-decoration: none;
-    background-color: #ff6b6b;
+    background-color: #323233;
     transform: scale(1.1);
     
 }
-
+.btn-toggle{
+    grid-area: btnDesplegable;
+    padding: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    
+}
 section{
-    grid-area: aside;
-    border: solid 1px;
+    
+    padding: 0;
+    margin: 0;
 }
-main{
-    grid-area: main;
-    border: solid 1px;
-    margin-right: 10px;
-    padding-right: 10px;
-
-p{
-    margin-left: 10px;
-    color: rgb(244, 247, 248);
+.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px; 
+    flex-wrap: wrap;
 }
-
-img{
-    width: 170px;
-    height: 300px;
+.maincontent{
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px; 
+    flex-wrap: wrap;
+}
+.imgMain{
+    width: 200px;
+    height: 250px;
+    float: right;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+.imgMain:hover{
+    transform: scale(1.1);
+    border: 2px solid rgb(116, 62, 62);
+}
+.dasCapi{
+    width: 200px;
+    height: 250px;
     float: left;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid rgb(116, 62, 62);
 }
-}
+
 footer{
-    grid-area: footer;
     font-size: 10px;
     text-align: center;
     
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: rgb(52, 82, 165);
 }

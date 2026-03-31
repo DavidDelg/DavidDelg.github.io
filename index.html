@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Delgadillos</title>
     <link rel="stylesheet" href="../docCss/style.css">
+    <link rel="stylesheet" href="../docCss/disposicion.css">
 </head>
 <body class="container">
-    <header class="cabecera">
-        <div class="title name"><h1>
-            DelgServices<br>
-            <span>servicios de calidad</span>
-        </h1></div>
-        <nav>
-            <ul>
+    <header class="cabesera">
+        <div class="name">
+            <h1>David Delgadillo</h1>
+        </div>
+        <div class="title"><h2>
+            <span>mi portafolio</span></h2>
+        </div>
+        <nav class="menu">
+            <ul class="navList">
 
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="../docHtml/cervices.html">Servicios</a></li>
-                <li><a href="../docHtml/contact.html">Contacto</a></li>
-                <li><a href="../docHtml/about.html">Acerca de mi</a></li>
+                <li><a href="index.html" class="btn">Inicio</a></li>
+                <li><a href="../docHtml/cervices.html" class="btn">Servicios</a></li>
+                <li><a href="../docHtml/contact.html" class="btn">Contacto</a></li>
+                <li><a href="../docHtml/about.html" class="btn">Acerca de mi</a></li>
             </ul>
         </nav>
+        <div>
+            <button id="btn-menu" class="btn-toggle btn">desplegar</button>
+        </div>
     </header> 
     
     <main >
@@ -29,31 +35,48 @@
             <img src="../graficas/techo1.jpg" alt="trabajo en cumbrera de casa">
             <p>
                 ¿Necesitas un techo seguro y duradero? ¡Yo te tengo cubierto!
-                Soy especialista en construcción, reparación y mantenimiento de techos. 
-                Con años de experiencia y un compromiso con la calidad, ofrezco soluciones personalizadas
-                para proteger tu hogar o negocio de las inclemencias del tiempo. Trabajo con materiales
-                de alta resistencia y aplico técnicas eficaces para garantizar resultados que combinan 
-                funcionalidad y estética. Ya sea que necesites instalar un nuevo techo, reparar el 
-                actual o realizar mantenimiento preventivo, estoy aquí para ayudarte.
+Soy especialista en construcción, reparación y mantenimiento de techos. 
+Con años de experiencia y un compromiso con la calidad, ofrezco soluciones personalizadas
+ para proteger tu hogar o negocio de las inclemencias del tiempo. Trabajo con materiales
+  de alta resistencia y aplico técnicas eficaces para garantizar resultados que combinan 
+  funcionalidad y estética. Ya sea que necesites instalar un nuevo techo, reparar el 
+  actual o realizar mantenimiento preventivo, estoy aquí para ayudarte.
 
             </p>
         </div>
     </main>
-    <section>
-        <div class="aside">
-            
-            <p>seccion lateral</p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit expedita explicabo asperiores velit illo cumque aliquid rerum, minus quis totam consectetur, tenetur cum culpa, placeat dolore pariatur vitae! Autem?
-            </p>
+    <sidebar class="sidebar">
+        <div class="lateral">
+            <h3 class="title encabezado">Servicios Destacados</h3>
+            <ul>
+                <li>lo que hago</li>
+                <li>lo que mas me gusta</li>
+                <li>lo que me gusta hacer</li>
+                <li>lo que me divierte</li>
+            </ul>
+        </div>
+    </sidebar>
+    <section class="seccion">
+        <div >
+            <p>seccion de informacion secundaria</p> 
         </div>
     </section>
-    <footer>
-        <div class="footer">
-            © 2025 David. Todos los derechos reservados.
+    <article class="articulos">
+        <div>
+            <h3 class="title encabezado">Articulos Destacados</h3>
+            <p>Articulo 1</p>
+            <p>Articulo 2</p>
+            <p>Articulo 3</p>
+        </div>
+    </article>
+    <footer class="pies">
+        <div>
+            <p>© 2025 David. Todos los derechos reservados.</p>
             <p>Desarrollado por David</p>
         </div>
       
     </footer>
+
+    <script src="../docJs/script.js"></script>
 </body>
 </html>
