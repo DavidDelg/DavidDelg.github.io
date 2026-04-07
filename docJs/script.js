@@ -32,7 +32,7 @@ function agregarNumero(){
   let promedios = document.getElementById("promedios");
   
   if (isNaN(num)) {
-    lista.textContent = "Por favor ingrese un numero válido";
+    lista.textContent = 'Por favor ingrese un numero válido';
     lista.style.color = red;
     return;
   }
@@ -46,13 +46,12 @@ function agregarNumero(){
     }
   }
 //Mostrar lista acumulada
-lista.textContent = "Numeros ingresados: ${numeros.join(", ")}";
+lista.textContent = `Numeros ingresados: ${numeros.join(", ")}`;
 
 //Calcular promedios
 let promedioPares = pares.length > 0 ? (pares.reduce((a, b) => a+b, 0) / pares.length).toFixed(2) : 0;
 let promedioImpares = impares.length > 0 ? (impares.reduce((a,b) => a+b, 0) / impares.length).toFixed(2) : 0;
 
-promedios.textContent = 'Promedios pares: ${promediosPares} | Promedios impares: ${promedioImpares}';
-
+promedios.textContent = `Promedio pares: ${promedioPares} | Promedio impares: ${promedioImpares}`;
 
 }
