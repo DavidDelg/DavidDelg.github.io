@@ -22,7 +22,7 @@
 }
 .main{
     grid-area: main;
-    display: table-column;
+    display: flex;
     
 }
 .seccion{
