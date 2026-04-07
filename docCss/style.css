@@ -116,6 +116,12 @@ section{
     gap: 5px; 
     flex-wrap: wrap;
 }
+input, button{
+margin: 10px;
+padding: 8px;
+font-size: 16px;
+}
+
 .maincontent{
     width: 70%;
     padding: 0;
