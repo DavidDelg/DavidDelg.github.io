@@ -1,24 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="stylesheet" href="../docCss/styleCervices.css">
+    <title>🎒 Mis Superpoderes — Escuela de Héroes</title>
+    <link rel="stylesheet" href="../docCss/style.css">
+    <link rel="stylesheet" href="../docCss/disposicion.css">
+    <link rel="stylesheet" href="../docCss/infantil.css">
 </head>
-<body>
-    <header>
-         <h1>Servicios</h1>
-         <nav>
-             <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../docHtml/cervices.html">Servicios</a></li>
-                    <li><a href="../docHtml/contact.html">Contacto</a></li>
-                    <li><a href="../docHtml/about.html">Acerca de mi</a></li>
-             </ul>
-         </nav>
+<body class="container">
+
+    <div class="aranita-colgante" aria-hidden="true">
+        <div class="hilo"></div>
+        <div class="arania">🕷️</div>
+    </div>
+
+    <header class="cabesera">
+        <div class="name">
+            <h1>🕷️ David "Hombre Araña" Delgadillo 🕸️</h1>
+        </div>
+        <div class="title"><h2>
+            <span>La Escuela de Héroes · ¡Aprende jugando!</span></h2>
+        </div>
+        <nav class="menu" aria-label="Menú principal de la escuela">
+            <ul class="navList">
+                <li><a href="../index.html" class="btn">🏠 Mi Cueva Araña</a></li>
+                <li><a href="contadorNum.html" class="btn">🔢 Laboratorio de Números</a></li>
+                <li><a href="contact.html" class="btn">📞 Telaraña de Contacto</a></li>
+                <li><a href="about.html" class="btn">🦸 ¿Quién soy?</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="btn-menu" class="btn-toggle btn">☰ ¡Desplegar mi red!</button>
+        </div>
     </header>
-   
-    
+
+    <main>
+        <div class="main">
+            <h3 class="title Tmain">🎒 Mis Superpoderes (lo que sé hacer)</h3>
+            <img class="imgMain" src="../graficas/dasSpider2.jpeg" width="200" height="250" loading="lazy" decoding="async" alt="David lanzando telarañas como el Hombre Araña">
+            <p>Todo héroe entrena sus poderes. ¡Estos son los míos! 💪</p>
+            <p>🕸️ <strong>Poder de las Telarañas (HTML):</strong> construyo la red de toda página web.</p>
+            <p>🎨 <strong>Poder de los Colores (CSS):</strong> pinto y decoro mis telarañas para que sean bonitas.</p>
+            <p>⚡ <strong>Poder del Sentido Arañido (JavaScript):</strong> ¡hago que las páginas cobren vida y respondan!</p>
+            <p>🧪 <strong>Poder de la Ciencia:</strong> explico experimentos fáciles para pequeños héroes.</p>
+
+            <div class="dato-curioso" id="datoCurioso">
+                <strong>🤔 ¿Sabías que…?</strong> el nombre "Arácnida" viene de Aracne, una tejedora
+                gigante de la antigua Grecia. ¡Las arañas tejen más de 40 millones de telarañas
+                en todo el mundo cada día! 🌍🕸️
+            </div>
+        </div>
+    </main>
+
+    <sidebar class="sidebar">
+        <div class="lateral">
+            <h3 class="title encabezado">🎒 Misiones de Hoy</h3>
+            <ul>
+                <li>Conocer los superpoderes de David</li>
+                <li>Practicar números PARI e IMPAR</li>
+                <li>Aprender un dato curioso nuevo</li>
+                <li>Enviar un mensaje por la telaraña 📞</li>
+            </ul>
+        </div>
+    </sidebar>
+
+    <section class="seccion">
+        <div>
+            <h3 class="title encabezado">💪 Cómo entrenar como un héroe</h3>
+            <p>1. Lee un poquito cada día, como Peter Parker con sus libros.</p>
+            <p>2. Practica sumar y contar arañas: 8 patas por araña, 2 arañas = 16 patas. 🕷️🕷️</p>
+            <p>3. ¡Ensúciate las manos con experimentos!</p>
+        </div>
+    </section>
+
+    <article class="articulos">
+        <div>
+            <h3 class="title encabezado">📚 Estaciones de Aprendizaje</h3>
+            <p>🔢 Cuenta conmigo: números pares, impares y promedios</p>
+            <p>🧪 La ciencia de las arañas: datos curiosos de la naturaleza</p>
+            <p>💻 Código arácnido: cómo se hacen las páginas web</p>
+        </div>
+    </article>
+
+    <footer class="pies">
+        <div>
+            <p>© 2026 David el Hombre Araña. ¡Todos los superpoderes reservados! 🕷️</p>
+            <p>Hecho con ❤️ y mucha telaraña por David</p>
+        </div>
+    </footer>
+
+    <script src="../docJs/script.js" defer></script>
 </body>
 </html>
