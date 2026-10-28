@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Delgadillos</title>
-    <link rel="stylesheet" href="../docCss/style.css">
-    <link rel="stylesheet" href="../docCss/disposicion.css">
+    <!-- preload: el navegador descarga los CSS en paralelo con mayor prioridad -->
+    <link rel="preload" href="docCss/style.css" as="style">
+    <link rel="preload" href="docCss/disposicion.css" as="style">
+    <link rel="stylesheet" href="docCss/style.css">
+    <link rel="stylesheet" href="docCss/disposicion.css">
 </head>
 <body class="container">
     <header class="cabesera">
@@ -33,7 +36,7 @@
     <main >
         <div class="main">
             <h3 class="title Tmain">Lo Mas Reciente</h3>
-            <img class="imgMain" src="../graficas/davidSpider.jpeg" alt="Hombre araña">
+            <img class="imgMain" src="graficas/davidSpider.webp" width="200" height="250" fetchpriority="high" decoding="async" alt="Hombre araña">
             <p>
                 Este soy yo 
 
@@ -72,6 +75,6 @@
       
     </footer>
 
-    <script src="../docJs/script.js"></script>
+    <script src="docJs/script.js" defer></script>
 </body>
 </html>

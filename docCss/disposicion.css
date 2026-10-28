@@ -54,17 +54,20 @@
     }
     .sidebar{
         position: fixed;
-        left: -200px;
         top: 0px;
         height: 100vh;
         width: 200px;
         z-index: 1000;
-        transition: 0.3s;
+        /* animar transform en lugar de left: left provoca re-layout en cada
+           cuadro; transform se compone en la GPU (animacion fluida) */
+        transform: translateX(-200px);
+        transition: transform 0.3s ease;
+        will-change: transform;
         background-color: rgb(37, 44, 37);
         color: rgb(109, 92, 62);
     }
     .sidebar.activo{
-        left: 0px;
+        transform: translateX(0);
     }
     .btn-toggle{
         display: block;

@@ -151,8 +151,9 @@ font-size: 16px;
     gap: 10px;
 }
 .imgMain:hover{
+    /* solo transform (composicion por GPU, no reflow); se quito el borde del
+       hover porque cambiaba las dimensiones y provocaba re-layout */
     transform: scale(1.1);
-    border: 2px solid rgb(116, 62, 62);
 }
 .dasCapi{
     width: 200px;
