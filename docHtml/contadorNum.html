@@ -3,76 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador y acumulador de numeros con promedio</title>
+    <title>🔢 Laboratorio de Números del Hombre Araña</title>
     <link rel="stylesheet" href="../docCss/style.css">
     <link rel="stylesheet" href="../docCss/disposicion.css">
+    <link rel="stylesheet" href="../docCss/infantil.css">
 </head>
 <body class="container">
+
+    <div class="aranita-colgante" aria-hidden="true">
+        <div class="hilo"></div>
+        <div class="arania">🕷️</div>
+    </div>
+
     <header class="cabesera">
         <div class="name">
-            <h1>David Delgadillo</h1>
+            <h1>🕷️ David "Hombre Araña" Delgadillo 🕸️</h1>
         </div>
         <div class="title"><h2>
-            <span>mi portafolio</span></h2>
+            <span>La Escuela de Héroes · ¡Aprende jugando!</span></h2>
         </div>
-        <nav class="menu">
+        <nav class="menu" aria-label="Menú principal de la escuela">
             <ul class="navList">
-                    <li><a href="../index.html" class="btn">Inicio</a></li>
-                    <li><a href="cervices.html" class="btn">Servicios</a></li>
-                    <li><a href="contact.html" class="btn">Contacto</a></li>
-                    <li><a href="about.html" class="btn">Acerca de mi</a></li>
+                    <li><a href="../index.html" class="btn">🏠 Mi Cueva Araña</a></li>
+                    <li><a href="cervices.html" class="btn">🎒 Mis Superpoderes</a></li>
+                    <li><a href="contact.html" class="btn">📞 Telaraña de Contacto</a></li>
+                    <li><a href="about.html" class="btn">🦸 ¿Quién soy?</a></li>
             </ul>
         </nav>
         <div>
-            <button id="btn-menu" class="btn-toggle btn">desplegar</button>
+            <button id="btn-menu" class="btn-toggle btn">☰ ¡Desplegar mi red!</button>
         </div>
-    </header> 
-    
-    <main >
-        <div class="main">
-            <h1>Contador, Acumulador y Promedio</h1>
-            <br>
-            <label for="numero">Ingrese un número: </label>
-            <input type="number" id="numero" step="any">
-            <button onclick="agregarNumero()">Agregar número</button>
+    </header>
 
-            <h3 class="cuadros-resultado">resultados</h3>
+    <main>
+        <div class="main">
+            <h1>🔢 Laboratorio de Números PARI e IMPAR</h1>
+
+            <p><strong>¡Bienvenido al laboratorio secreto del Hombre Araña! 🧪</strong><br>
+            Cada número que atrapes con tu <em>sentido arácnido</em> se clasificará aquí:</p>
+            <p>🕷️ <strong>NÚMERO PARI:</strong> se puede dividir en dos grupos iguales
+            (como repartir telarañas entre 2 arañas sin que sobre ninguna). Ejemplos: 2, 4, 6, 8, 10…</p>
+            <p>🕸️ <strong>NÚMERO IMPAR:</strong> siempre sobra una arañita solitaria. Ejemplos: 1, 3, 5, 7, 9…</p>
+
+            <label for="numero">🕷️ Atrapa un número: </label>
+            <input type="number" id="numero" step="any" placeholder="Escribe aquí…">
+            <button onclick="agregarNumero()">¡Lanza tu telaraña! 🕸️</button>
+
+            <!-- Nivel de héroe: se llena con script.js -->
+            <div class="nivel-heroe" id="nivelHeroe" title="Tu poder aumenta con cada número atrapado">🕷️🕷️🕷️🕷️🕷️</div>
+
+            <h3 class="cuadros-resultado">📋 Cuaderno de resultados</h3>
             <div id="resultados">
-                <p id="lista"></p>
-                <p id="promedios"></p>
+                <p id="lista">Aún no has atrapado ningún número. ¡Lanza tu primera telaraña! 🕸️</p>
+                <p id="promedios">El promedio es como repartir galletas entre todas las arañas:
+                    sumamos todo y dividimos entre el número de arañas. 🍪</p>
+            </div>
+
+            <div class="dato-curioso" id="datoCurioso">
+                <strong>🤔 ¿Sabías que…?</strong> ¡el cuerpo de una abeja mide sus celdas en números!
+                Pero las arañas son aún más increíbles: casi todas tienen <strong>8 patas</strong>,
+                ¡y 8 es un número PARI! 🕷️
             </div>
         </div>
     </main>
+
     <sidebar class="sidebar">
         <div class="lateral">
-            <h3 class="title encabezado">Servicios Destacados</h3>
+            <h3 class="title encabezado">🎒 Misiones de Hoy</h3>
             <ul>
-                <li>lo que hago</li>
-                <li>lo que mas me gusta</li>
-                <li>lo que me gusta hacer</li>
-                <li>lo que me divierte</li>
+                <li>Atrapar 5 números y clasificarlos</li>
+                <li>Descubrir qué es un promedio</li>
+                <li>Contar de 2 en 2 como las arañas</li>
+                <li>Ganar todas las arañas de poder 🕷️</li>
             </ul>
         </div>
     </sidebar>
+
     <section class="seccion">
-        <div >
-            <p>seccion de informacion secundaria</p> 
+        <div>
+            <h3 class="title encabezado">💡 Truco del Héroe</h3>
+            <p>Si un número termina en 0, 2, 4, 6 u 8 → ¡es PARI! 🕷️</p>
+            <p>Si termina en 1, 3, 5, 7 o 9 → ¡es IMPAR! 🕸️</p>
         </div>
     </section>
+
     <article class="articulos">
         <div>
-            <h3 class="title encabezado">Articulos Destacados</h3>
-            <p>Articulo 1</p>
-            <p>Articulo 2</p>
-            <p>Articulo 3</p>
+            <h3 class="title encabezado">📚 Estaciones de Aprendizaje</h3>
+            <p>🔢 Cuenta conmigo: números pares, impares y promedios</p>
+            <p>🧪 La ciencia de las arañas: datos curiosos de la naturaleza</p>
+            <p>💻 Código arácnido: cómo se hacen las páginas web</p>
         </div>
     </article>
+
     <footer class="pies">
         <div>
-            <p>© 2025 David. Todos los derechos reservados.</p>
-            <p>Desarrollado por David</p>
+            <p>© 2026 David el Hombre Araña. ¡Todos los superpoderes reservados! 🕷️</p>
+            <p>Hecho con ❤️ y mucha telaraña por David</p>
         </div>
-      
     </footer>
 
     <script src="../docJs/script.js" defer></script>

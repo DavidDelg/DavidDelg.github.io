@@ -3,76 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Delgadillos</title>
+    <title>🕷️ La Escuela de Héroes de David — ¡Aprende con el Hombre Araña!</title>
+    <meta name="description" content="Sitio educativo para niños: aprende números, ciencias y superpoderes con David el Hombre Araña.">
     <!-- preload: el navegador descarga los CSS en paralelo con mayor prioridad -->
     <link rel="preload" href="docCss/style.css" as="style">
     <link rel="preload" href="docCss/disposicion.css" as="style">
     <link rel="stylesheet" href="docCss/style.css">
     <link rel="stylesheet" href="docCss/disposicion.css">
+    <!-- El tema infantil se carga AL FINAL para sobreescribir el estilo serio -->
+    <link rel="stylesheet" href="docCss/infantil.css">
 </head>
 <body class="container">
+
+    <!-- Arañita decorativa que cuelga de un hilo (adorno: no importa para lectores de pantalla) -->
+    <div class="aranita-colgante" aria-hidden="true">
+        <div class="hilo"></div>
+        <div class="arania">🕷️</div>
+    </div>
+
     <header class="cabesera">
         <div class="name">
-            <h1>David Delgadillo</h1>
+            <h1>🕷️ David "Hombre Araña" Delgadillo 🕸️</h1>
         </div>
         <div class="title"><h2>
-            <span>mi portafolio</span></h2>
+            <span>La Escuela de Héroes · ¡Aprende jugando!</span></h2>
         </div>
-        <nav class="menu">
+        <nav class="menu" aria-label="Menú principal de la escuela">
             <ul class="navList">
 
-                <li><a href="index.html" class="btn">Inicio</a></li>
-                <li><a href="../docHtml/contadorNum.html" class="btn">Contador de número</a></li>
-                <li><a href="../docHtml/cervices.html" class="btn">Servicios</a></li>
-                <li><a href="../docHtml/contact.html" class="btn">Contacto</a></li>
-                <li><a href="../docHtml/about.html" class="btn">Acerca de mi</a></li>
+                <li><a href="index.html" class="btn">🏠 Mi Cueva Araña</a></li>
+                <li><a href="docHtml/contadorNum.html" class="btn">🔢 Laboratorio de Números</a></li>
+                <li><a href="docHtml/cervices.html" class="btn">🎒 Mis Superpoderes</a></li>
+                <li><a href="docHtml/contact.html" class="btn">📞 Telaraña de Contacto</a></li>
+                <li><a href="docHtml/about.html" class="btn">🦸 ¿Quién soy?</a></li>
             </ul>
         </nav>
         <div>
-            <button id="btn-menu" class="btn-toggle btn">desplegar</button>
+            <button id="btn-menu" class="btn-toggle btn">☰ ¡Desplegar mi red!</button>
         </div>
-    </header> 
-    
-    <main >
-        <div class="main">
-            <h3 class="title Tmain">Lo Mas Reciente</h3>
-            <img class="imgMain" src="graficas/davidSpider.webp" width="200" height="250" fetchpriority="high" decoding="async" alt="Hombre araña">
-            <p>
-                Este soy yo 
+    </header>
 
+    <main>
+        <div class="main">
+            <h3 class="title Tmain">🕸️ Lo Más Reciente del Héroe</h3>
+            <img class="imgMain" src="graficas/davidSpider.webp" width="200" height="250" fetchpriority="high" decoding="async" alt="David disfrazado de Hombre Araña, listo para enseñar">
+            <p>
+                <strong>¡Hola, pequeño héroe! 🕷️</strong> Yo soy <strong>David el Hombre Araña</strong>.
+                Así como Peter Parker aprendió a usar sus poderes, aquí tú aprenderás
+                <strong>números, ciencias y magia del código</strong> mientras te diviertes.
+                ¡Con gran poder viene… <strong>¡gran diversión!</strong> 🎉
             </p>
+
+            <!-- Dato curioso rotativo (lo llena script.js) -->
+            <div class="dato-curioso" id="datoCurioso">
+                <strong>🤔 ¿Sabías que…?</strong> Las arañas tejen su tela con seda que es
+                más fuerte que un hilo de acero del mismo grosor. ¡Por eso el Hombre Araña
+                puede columpiarse sin caerse! 🕸️
+            </div>
+
+            <!-- Mini lección interactiva: par o impar -->
+            <div class="mision-lograda">
+                🎯 <strong>Misión relámpago:</strong> escribe un número en el
+                <a href="docHtml/contadorNum.html">Laboratorio de Números</a> y descubre si es
+                <strong>PARI</strong> (se divide justo entre dos arañas 🕷️🕷️) o
+                <strong>IMPAR</strong> (siempre sobra una arañita suelta).
+            </div>
         </div>
     </main>
+
     <sidebar class="sidebar">
         <div class="lateral">
-            <h3 class="title encabezado">Proyectos</h3>
+            <h3 class="title encabezado">🎒 Misiones de Hoy</h3>
             <ul>
-                <li ><a href="../docHtml/contadorNum.html" class="btn"></a>Números par, impar y promedio</li>
-                <li>lo que mas me gusta</li>
-                <li>lo que me gusta hacer</li>
-                <li>lo que me divierte</li>
+                <li><a href="docHtml/contadorNum.html" class="btn">Números PARI e IMPAR con el sentido arácnido</a></li>
+                <li>Juegos que me encantan 🕹️</li>
+                <li>Cómo programo mis telarañas 💻</li>
+                <li>Experimentos científicos 🔬</li>
             </ul>
         </div>
     </sidebar>
+
     <section class="seccion">
-        <div >
-            <p>seccion de informacion secundaria</p> 
+        <div>
+            <h3 class="title encabezado">🌟 Reglas del Héroe</h3>
+            <p>1. Nunca rendirse, como Peter Parker.</p>
+            <p>2. Ayudar a los demás con lo que sabemos.</p>
+            <p>3. ¡Preguntar todo! Las dudas son superpoderes nuevos.</p>
         </div>
     </section>
+
     <article class="articulos">
         <div>
-            <h3 class="title encabezado">Articulos Destacados</h3>
-            <p>Articulo 1</p>
-            <p>Articulo 2</p>
-            <p>Articulo 3</p>
+            <h3 class="title encabezado">📚 Estaciones de Aprendizaje</h3>
+            <p>🔢 Cuenta conmigo: números pares, impares y promedios</p>
+            <p>🧪 La ciencia de las arañas: datos curiosos de la naturaleza</p>
+            <p>💻 Código arácnido: cómo se hacen las páginas web</p>
         </div>
     </article>
+
     <footer class="pies">
         <div>
-            <p>© 2025 David. Todos los derechos reservados.</p>
-            <p>Desarrollado por David</p>
+            <p>© 2026 David el Hombre Araña. ¡Todos los superpoderes reservados! 🕷️</p>
+            <p>Hecho con ❤️ y mucha telaraña por David</p>
         </div>
-      
+
     </footer>
 
     <script src="docJs/script.js" defer></script>

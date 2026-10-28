@@ -1,71 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de mi</title>
+    <title>🦸 ¿Quién soy? — David el Hombre Araña</title>
     <link rel="stylesheet" href="../docCss/style.css">
     <link rel="stylesheet" href="../docCss/disposicion.css">
+    <link rel="stylesheet" href="../docCss/infantil.css">
 </head>
-<body>
+<body class="container">
+
+    <div class="aranita-colgante" aria-hidden="true">
+        <div class="hilo"></div>
+        <div class="arania">🕷️</div>
+    </div>
+
     <header class="cabesera">
         <div class="name">
-            <h1>David Delgadillo</h1>
+            <h1>🕷️ David "Hombre Araña" Delgadillo 🕸️</h1>
         </div>
         <div class="title"><h2>
-            <span>mi portafolio</span></h2>
+            <span>La Escuela de Héroes · ¡Aprende jugando!</span></h2>
         </div>
-        <nav class="menu">
+        <nav class="menu" aria-label="Menú principal de la escuela">
             <ul class="navList">
-
-                <li><a href="../index.html" class="btn">Inicio</a></li>
-                <li><a href="../docHtml/cervices.html" class="btn">Servicios</a></li>
-                <li><a href="../docHtml/contact.html" class="btn">Contacto</a></li>
-                <li><a href="../docHtml/about.html" class="btn">Acerca de mi</a></li>
+                <li><a href="../index.html" class="btn">🏠 Mi Cueva Araña</a></li>
+                <li><a href="contadorNum.html" class="btn">🔢 Laboratorio de Números</a></li>
+                <li><a href="cervices.html" class="btn">🎒 Mis Superpoderes</a></li>
+                <li><a href="contact.html" class="btn">📞 Telaraña de Contacto</a></li>
             </ul>
         </nav>
         <div>
-            <button id="btn-menu" class="btn-toggle btn">desplegar</button>
+            <button id="btn-menu" class="btn-toggle btn">☰ ¡Desplegar mi red!</button>
         </div>
-    </header> 
+    </header>
+
     <main>
-        <div>
-            <h2 class="title">Acerca de mi</h2>
-            <p>¡Hola! Soy David, un desarrollador web Full Stack. Me encanta programar y diseñar sitios web. Tengo experiencia en HTML, CSS, JavaScript, PHP, MySQL y más. ¡Contáctame para trabajar juntos!</p>
+        <div class="main about">
+            <h3 class="title Tmain">🦸 ¡Hola! Yo soy David el Hombre Araña</h3>
+            <img class="dasCapi" src="../graficas/dasCapi.jpeg" width="200" height="250" loading="lazy" decoding="async" alt="David con su traje de Hombre Araña saludando">
+            <p>
+                <strong>¡Hola, pequeño héroe! 👋</strong> Así como Peter Parker es un estudiante
+                normal que se convirtió en superhéroe, yo también empecé siendo un niño curioso
+                que descubrió un <strong>superpoder secreto: ¡programar computadoras!</strong> 💻
+            </p>
+            <p>
+                Mi <strong>telaraña</strong> son las páginas web y las aplicaciones que conectan
+                a las personas con la tecnología. Con gran poder viene…
+                <strong>¡gran responsabilidad de enseñar a los demás!</strong> 🕷️✨
+            </p>
+
+            <div class="mision-lograda">
+                🌟 <strong>La historia de mi poder:</strong> una araña especial me picó…
+                ¡mentira! 😄 En realidad fue la <strong>curiosidad</strong>, que es el único
+                superpoder que TODOS podemos tener. Solo hay que hacer muchas preguntas.
+            </div>
+
+            <div class="dato-curioso" id="datoCurioso">
+                <strong>🤔 ¿Sabías que…?</strong> las arañas pueden vivir hasta 3 años sin comer,
+                pero jamás saltan comidas… ¡bueno, casi nunca! Mejor come tus verduras, pequeño héroe. 🥦
+            </div>
         </div>
     </main>
-    <section>
 
-    </section>
     <sidebar class="sidebar">
         <div class="lateral">
-            <h3 class="title encabezado">Servicios Destacados</h3>
+            <h3 class="title encabezado">🎒 Misiones de Hoy</h3>
             <ul>
-                <li>lo que hago</li>
-                <li>lo que mas me gusta</li>
-                <li>lo que me gusta hacer</li>
-                <li>lo que me divierte</li>
+                <li>Conocer la historia de David 🦸</li>
+                <li>Practicar números PARI e IMPAR</li>
+                <li>Aprender un dato curioso nuevo</li>
+                <li>Enviar un mensaje por la telaraña 📞</li>
             </ul>
         </div>
     </sidebar>
-    <section>
-        <div class="about">
-            
-            <h1>Acerca de mi</h1>
-            <p>¡Hola! Soy David, un desarrollador web Full Stack. Me encanta programar y diseñar sitios web. Tengo experiencia en HTML, CSS, JavaScript, PHP, MySQL y más. ¡Contáctame para trabajar juntos!</p>
-            <p>Sobre mí
-            <br>• 	Breve narración que te presenta como el “héroe invisible” que aparece cuando hay problemas técnicos o creativos.
-            <br>• 	Enfatiza tu pasión por la tecnología, el diseño y la resolución de problemas.
-            <br>“Soy David, un creador que combina código, diseño y creatividad para transformar retos en soluciones. Mi telaraña son las apps, los sistemas y las experiencias interactivas que conectan personas con tecnología.”
-            </p>
+
+    <section class="seccion">
+        <div>
+            <h3 class="title encabezado">🧰 Mi caja de superpoderes</h3>
+            <p>HTML (la red), CSS (los colores), JavaScript (el movimiento), PHP y MySQL (la cueva secreta de datos).</p>
         </div>
     </section>
-    <article>
 
+    <article class="articulos">
+        <div>
+            <h3 class="title encabezado">📚 Estaciones de Aprendizaje</h3>
+            <p>🔢 Cuenta conmigo: números pares, impares y promedios</p>
+            <p>🧪 La ciencia de las arañas: datos curiosos de la naturaleza</p>
+            <p>💻 Código arácnido: cómo se hacen las páginas web</p>
+        </div>
     </article>
-    <footer>
-        <p>Desarrollado por David Delgadillo</p>
+
+    <footer class="pies">
+        <div>
+            <p>© 2026 David el Hombre Araña. ¡Todos los superpoderes reservados! 🕷️</p>
+            <p>Hecho con ❤️ y mucha telaraña por David</p>
+        </div>
     </footer>
+
     <script src="../docJs/script.js" defer></script>
 </body>
 </html>
